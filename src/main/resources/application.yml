@@ -1,0 +1,17 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/jppm1850/lifeinsurtech-configurationfiles-dev.git
+          username: jppm1850@gmail.com
+          password: 288pedro288
+          default-label: main
+          skip-ssl-validation : true
+  profiles:
+    active: git
